@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA CULPA | Hamburguesería en Campeche</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,900&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="brand-link">
+            <img src="./img/logo.png" alt="LA CULPA Logo" class="brand-logo">
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#menu" class="nav-link">Menú</a></li>
+                <li><a href="#promociones" class="nav-link">Promociones</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-bg-text">BURGER</div>
+            <div class="ring ring-outer"></div>
+            <div class="ring ring-inner"></div>
+
+            <div class="hero-display">
+                <button class="arrow-btn arrow-prev" id="prevBtn" aria-label="Hamburguesa anterior"></button>
+                
+                <div class="hero-stage">
+                    <div class="burger-wrapper active">
+                        <img src="./img/clasica.png" alt="LA CLÁSICA" class="hero-burger burger-clasica">
+                    </div>
+                    <div class="burger-wrapper">
+                        <img src="./img/aura hamburguesa.png" alt="AURA" class="hero-burger burger-aura">
+                    </div>
+                    <div class="burger-wrapper">
+                        <img src="./img/67 hamburguesa.png" alt="SIX SEVEN" class="hero-burger burger-six-seven">
+                    </div>
+                    <div class="burger-shadow"></div>
+                </div>
+
+                <button class="arrow-btn arrow-next" id="nextBtn" aria-label="Siguiente hamburguesa"></button>
+            </div>
+
+            <div class="hero-content">
+                <span class="badge-tag">HAMBURGUESA</span>
+                <h1 class="hero-title" id="burgerTitle">LA CLÁSICA</h1>
+                <div class="divider-line"></div>
+                <p class="hero-description">
+                    Carne a la parrilla, queso derretido y ese sabor que hace que pedir otra parezca una excelente decisión
+                </p>
+                <a href="https://wa.me/529831254876" class="btn btn-primary">ORDENAR AHORA</a>
+            </div>
+
+            <div class="indicators">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="section-header">
+                <span class="section-tag">NUESTRA CARTA</span>
+                <h2 class="section-title">ELIGE TU <span class="highlight">CULPA</span></h2>
+                <div class="divider-line center"></div>
+            </div>
+
+            <div class="menu-grid">
+                <article class="card">
+                    <span class="card-number">01</span>
+                    <div class="card-img-box">
+                        <img src="./img/clasica.png" alt="LA CLÁSICA" class="card-img fit-clasica">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">LA CLÁSICA</h3>
+                        <p class="card-desc">Carne a la parrilla, queso derretido y ese sabor que hace que pedir otra parezca una excelente decisión.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$140</span>
+                            <a href="https://wa.me/529831254876" class="btn-card">PEDIR</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <span class="card-number">02</span>
+                    <div class="card-img-box">
+                        <img src="./img/aura hamburguesa.png" alt="AURA" class="card-img fit-aura">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">AURA</h3>
+                        <p class="card-desc">Combinación perfecta de texturas y sazón único que resalta en cada mordida. Experiencia pura.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$165</span>
+                            <a href="https://wa.me/529831254876" class="btn-card">PEDIR</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <span class="card-number">03</span>
+                    <div class="card-img-box">
+                        <img src="./img/67 hamburguesa.png" alt="SIX SEVEN" class="card-img fit-six-seven">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">SIX SEVEN</h3>
+                        <p class="card-desc">Doble dosis de sabor, ingredientes seleccionados y la receta secreta de la casa en su máxima expresión.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$180</span>
+                            <a href="https://wa.me/529831254876" class="btn-card">PEDIR</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="promo-section" id="promociones">
+            <div class="promo-card">
+                <span class="promo-badge">PROMOCIÓN</span>
+                <h2 class="promo-title">LA CULPA COMPLETA</h2>
+                <div class="promo-subtitle">TODO O NADA</div>
+                
+                <div class="promo-img-wrapper">
+                    <img src="./img/promo.png" alt="Promoción La Culpa Completa" class="promo-img">
+                </div>
+
+                <p class="promo-description">
+                    Tu hamburguesa favorita acompañada de todo lo necesario para convertir un antojo en plan.
+                </p>
+
+                <div class="promo-price-tag">
+                    <span class="price-val">$199</span>
+                </div>
+
+                <a href="https://wa.me/529831254876" class="btn btn-primary full-width">QUIERO LA PROMO</a>
+            </div>
+        </section>
+
+        <section class="about-section" id="nosotros">
+            <div class="section-header">
+                <span class="section-tag">HISTORIA</span>
+                <h2 class="section-title">NACIMOS<br>PARA DARTE<br><span class="highlight">CULPA</span></h2>
+                <div class="divider-line"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-img-frame">
+                    <img src="./img/local.png" alt="Local La Culpa Campeche" class="about-img">
+                </div>
+                <p class="about-text">
+                    Buen producto, fuego, hambre y cero arrepentimiento. Eso es La Culpa.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contacto">
+            <div class="section-header center-text">
+                <span class="section-tag">UBICACIÓN & PEDIDOS</span>
+                <h2 class="section-title">VEN POR<br>TU <span class="highlight">CULPA</span></h2>
+                <div class="divider-line center"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-block">
+                    <span class="contact-label">DIRECCIÓN</span>
+                    <h3 class="contact-heading">CAMPECHE, MÉXICO</h3>
+                    <p class="contact-detail">Calle 59 #236 entre 14 y 16<br>Centro, Campeche</p>
+                </div>
+
+                <div class="contact-block">
+                    <span class="contact-label">PEDIDOS</span>
+                    <h3 class="contact-heading">WHATSAPP</h3>
+                    <p class="contact-detail">983 125 4876</p>
+                    <a href="https://wa.me/529831254876" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                        ORDENAR VÍA WHATSAPP
+                    </a>
+                </div>
+
+                <div class="contact-block">
+                    <span class="contact-label">HORARIO</span>
+                    <h3 class="contact-heading">TODOS LOS DÍAS</h3>
+                    <p class="contact-detail">13:00 — 23:00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand">
+            <img src="./img/logo.png" alt="LA CULPA" class="footer-logo">
+            <p class="footer-tagline">Hamburguesas<br>Hot dogs<br>Y más</p>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 LA CULPA</p>
+            <p class="footer-loc">CAMPECHE, MX</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
